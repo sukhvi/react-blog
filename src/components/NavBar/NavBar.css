@@ -1,0 +1,51 @@
+.header {
+  text-align: center;
+  background: #e84e36;
+}
+
+.navBar {
+  text-align: center;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(245, 249, 250, 1) 100%
+  );
+  border-bottom: solid 8px #f9f9f9;
+  padding: 20px 0;
+}
+
+.navBar a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: #333;
+  transition: all ease-in-out 0.5s;
+}
+
+.navBar a:hover,
+.navBar a.active {
+  color: #e84e36;
+}
+
+/* Share CSS */
+.fbShare, .twitterShare, .linkedinShare, .pInterest {
+ text-decoration: none;
+ color: #fff;
+ border-radius: 4px;
+ padding: 6px 12px 6px 10px;
+ margin-right: 10px;
+}
+
+.fbShare {
+  background: #3a589e;
+}
+.twitterShare {
+  background: #56acee;
+}
+.linkedinShare {
+  background: #0077b5;
+}
+
+.pInterest {
+  background: #e50022;
+}

@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Common CSS */
+.container {
+  padding: 60px 20px 20px 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 750px;
+  transition: all ease-in-out 0.3s;
+  box-sizing: border-box;
+}
+.text-center {
+  text-align: center;
+}
+
+.backButton {
+  text-decoration: none;
+  color: #e84e36;
+}
+
+.backButton:hover {
+  text-decoration: underline;
+}
+
+/* Blog CSS */
+
+.blog {
+  margin-bottom: 30px;
+  padding-bottom: 100px;
+}
+
+.blogTitle {
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 50px;
+  color: #333;
+}
+.blogAuthor {
+  font-size: 15px;
+  color: #b1b1b4;
+  margin-bottom: 10px;
+}
+
+.blogAuthor span {
+  color: #000;
+  text-transform: capitalize;
+}
+
+.postDetails {
+  padding-top: 20px;
+}
+
+/* Share CSS */
+.shareTo {
+  margin: 20px 0 20px;
+  padding: 10px 0;
+  float: left;
+  width: 100%;
+  border-top: solid 1px #d0d0d0;
+  border-bottom: solid 1px #d0d0d0;
+}
+.shareTo svg {
+  margin-right: 5px;
+}
+
+.shareCount {
+  float: left;
+  text-align: center;
+  padding-left: 30px;
+  font-weight: bold;
+  line-height: 20px;
+  padding-top: 4px;
+}
+.shareCount span {
+  font-weight: normal;
+  font-size: 12px;
+}
+.shareButtons {
+  float: left;
+  border-left: solid 1px #d0d0d0;
+  padding-left: 30px;
+  margin-top: 7px;
+  margin-left: 30px;
+}
+
+.shareButtons a {
+  float: left;
+  transition: all ease-in-out 0.3s;
+}
+
+.shareButtons a:hover {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.43);
+}
+
+/* Read More Button */
+.readMore {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  color: #ecf0f1;
+  text-decoration: none;
+  border-radius: 5px;
+  border: solid 1px #f73619;
+  background: #e84e36;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 18px 8px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-box-shadow: 0px 6px 0px #a81600;
+  -moz-box-shadow: 0px 6px 0px #a81600;
+  box-shadow: 0px 6px 0px #a81600;
+  cursor: pointer;
+}
+.readMore:active {
+  -webkit-box-shadow: 0px 2px 0px #a81600;
+  -moz-box-shadow: 0px 2px 0px #a81600;
+  box-shadow: 0px 2px 0px #a81600;
+  position: relative;
+  top: 4px;
+}
+
+.deleteButton {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  color: #e84e36;
+  text-decoration: none;
+  border-radius: 5px;
+  border: solid 1px #f73619;
+  background: #fff;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 35px 8px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-box-shadow: 0px 6px 0px #a81600;
+  -moz-box-shadow: 0px 6px 0px #a81600;
+  box-shadow: 0px 6px 0px #a81600;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.deleteButton:active {
+  -webkit-box-shadow: 0px 2px 0px #a81600;
+  -moz-box-shadow: 0px 2px 0px #a81600;
+  box-shadow: 0px 2px 0px #a81600;
+  position: relative;
+  top: 4px;
+}
+
+/* Form  */
+.form {
+  padding-top: 30px;
+}
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.input-container.textarea {
+  height: 150px;
+}
+
+.input-container.textarea .input {
+  padding-top: 15px;
+}
+
+.input {
+  background-color: #f6fafa;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 0px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 55px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 17px;
+  
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #e84e36;
+}
