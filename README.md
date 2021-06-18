@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Simple Blog Application built using core features of React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Live Demo
+
+You can check the live view [here](https://gitreactblog.netlify.app/)
 
 ## Available Scripts
 
