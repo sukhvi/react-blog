@@ -43,3 +43,6 @@ Json-Server has been added to the dev dependencies because we are using it only 
 Once you are able to run the above command the data will be served from the db.json file in data folder.\
 
 
+## Some Limitations
+
+Functionality of creating and deleting will not be working while on mocked server but will work when you are running the project locally.
