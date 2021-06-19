@@ -4,9 +4,15 @@ import useFetchData from "../util/useFetchData";
 const PostDetail = () => {
   const { id } = useParams();
 
-  const { data: post } = useFetchData(`http://localhost:8000/posts/${id}`);
+  // Local path of file
+  // const { data: post } = useFetchData(`http://localhost:8000/posts/${id}`);
+
+  const { data: post } = useFetchData(`https://my-json-server.typicode.com/sukhvi/react-blog/posts/${id}`);
+  
   const handleDelete = id => {
-    fetch(`http://localhost:8000/posts/`+id, {
+    // Local fetch
+    // fetch(`http://localhost:8000/posts/`+id, {
+    fetch(`https://my-json-server.typicode.com/sukhvi/react-blog/posts/`+id, {
       method:'DELETE'
     }).then(()=>{
       history.push('/')

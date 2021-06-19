@@ -24,7 +24,10 @@ const CreatePost = () => {
             created
             
         }
-        fetch("http://localhost:8000/posts",{
+          // Local fetch
+          //fetch("http://localhost:8000/posts",{
+          fetch("https://my-json-server.typicode.com/sukhvi/react-blog/posts",{
+          
             method:'POST',
             headers: {
                 'Content-Type':'application/json'

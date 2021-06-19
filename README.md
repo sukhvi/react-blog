@@ -37,6 +37,8 @@ In the project directory, you can run
 
 ### `npx json-server --watch data/db.json  --port 8000`
 
+Note: Prior to run the json-server replace the endpoints to local by uncommenting the local paths and commenting third party json endpoints.
+
 Json-Server has been added to the dev dependencies because we are using it only for the development purpose.\
 Once you are able to run the above command the data will be served from the db.json file in data folder.\
 
